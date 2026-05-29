@@ -197,13 +197,13 @@ To remain consistent with the original figure/table code, normalization is perfo
 The optimizer searches two KELM hyperparameters:
 
 ```text
-x = [C, S]
+x = [C, γ]
 ```
 
 where:
 
 - `C` is the KELM regularization coefficient;
-- `S` is the RBF kernel parameter.
+- `γ` is the RBF kernel parameter.
 
 The search settings are:
 
@@ -234,7 +234,7 @@ The original fitness function is:
 01_KELM_bankruptcy/code_and_data/path_kelm/funcv.m
 ```
 
-For each candidate parameter vector `x = [C, S]`, `funcv.m` performs 5-fold cross-validation:
+For each candidate parameter vector `x = [C, γ]`, `funcv.m` performs 5-fold cross-validation:
 
 ```matlab
 K = 5;
@@ -245,7 +245,7 @@ For each fold:
 
 1. The current fold is used as the test set.
 2. The other folds are used as the training set.
-3. KELM is trained with the candidate `C` and `S`.
+3. KELM is trained with the candidate `C` and `γ`.
 4. The trained KELM predicts the test fold.
 5. The fold accuracy is calculated.
 6. The five fold accuracies are averaged.
