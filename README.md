@@ -1,6 +1,7 @@
 # MSDBO-KELM Bankruptcy Prediction Reproducibility Package
 
-This repository contains the bankruptcy prediction experiment based on MSDBO-optimized KELM. It is prepared for manuscript revision and reviewer verification. The repository is focused on the KELM bankruptcy prediction task only.
+The repository is focused on the KELM bankruptcy prediction task only.This repository contains the code for our **neural network**-based manuscript currently under submission. It provides the main implementation, experiment scripts, and supporting files required to reproduce the reported results. It is prepared for manuscript revision and reviewer verification.
+
 
 ## 1. Scope of the Shared Code
 
