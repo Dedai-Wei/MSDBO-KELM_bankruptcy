@@ -50,27 +50,6 @@ MSDBO-KELM bankruptcy prediction package
 |   |       |-- kelmPredict.m
 |   |       |-- kernel_matrix.m
 |   |       `-- kelm.m
-|   |
-|   |-- latest_results_20260529_081806
-|   |   |-- bankreshape_summary_four_metrics_runtime.csv
-|   |   |-- bankreshape_raw_runs.csv
-|   |   |-- bankreshape_raw_runs_with_seed.csv
-|   |   |-- bankreshape_seed_schedule.csv
-|   |   |-- bankreshape_metrics_runtime_rankings.xlsx
-|   |   |-- bankreshape_ranking_ACC.csv
-|   |   |-- bankreshape_ranking_MCC.csv
-|   |   |-- bankreshape_ranking_Sensitivity.csv
-|   |   |-- bankreshape_ranking_Specificity.csv
-|   |   |-- bankreshape_ranking_Runtime.csv
-|   |   `-- runtime_details
-|   |
-|   `-- original_main_cv_outputs
-|       |-- PerformanceMetricsStatistics.xlsx
-|       |-- AverageIterationCurves.jpg
-|       |-- BoxplotMetric1.jpg
-|       |-- BoxplotMetric2.jpg
-|       |-- BoxplotMetric3.jpg
-|       `-- BoxplotMetric4.jpg
 |
 `-- README.md
 ```
