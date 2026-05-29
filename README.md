@@ -81,11 +81,18 @@ Recommended environment:
 
 | Item | Requirement |
 |---|---|
-| Operating system | Windows 10/11 recommended |
-| Main software | MATLAB |
+| Operating system | Windows 11 Home China (64-bit); Windows 10/11 compatible |
+| Main software | MATLAB R2025a |
 | MATLAB toolboxes | Statistics and Machine Learning Toolbox; Deep Learning Toolbox or Neural Network Toolbox |
 | Spreadsheet support | MATLAB support for `.xlsx` read/write |
 | External language dependencies | None |
+| Hardware platform | Lenovo 82L5 machine |
+| CPU | AMD Ryzen 5 5600H with Radeon Graphics, 6 cores / 12 logical processors, 3.30 GHz |
+| Memory | 14.88 GB physical RAM |
+| GPU | AMD Radeon(TM) Graphics (2 GB) and NVIDIA GeForce GTX 1650 (4 GB); the provided scripts do not require GPU acceleration |
+| Convergence criterion | Each optimizer is run for a fixed maximum of 100 iterations (`maxIter = 100`); no additional early-stopping criterion is used in the provided scripts |
+| Computing environment | CPU-based MATLAB execution only; no Python, R, or other external runtime is required |
+| Experimental settings | Population size = 30, number of runs = 30, fitness evaluation = 5-fold CV, final metric evaluation = 10-fold CV, `seedBase = 20260529` |
 
 MATLAB functions used by the experiment include:
 
