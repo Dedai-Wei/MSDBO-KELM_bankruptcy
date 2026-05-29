@@ -427,76 +427,9 @@ The latest included raw result file with reconstructed seed is:
 01_KELM_bankruptcy/latest_results_20260529_081806/bankreshape_raw_runs_with_seed.csv
 ```
 
-## 11. Included Latest Results
 
-Latest included result directory:
 
-```text
-01_KELM_bankruptcy/latest_results_20260529_081806
-```
-
-Main result file:
-
-```text
-bankreshape_summary_four_metrics_runtime.csv
-```
-
-Four-metric summary:
-
-| Algorithm | ACC Mean ± Std | ACC Rank | MCC Mean ± Std | MCC Rank | Sensitivity Mean ± Std | Sens Rank | Specificity Mean ± Std | Spec Rank |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| QHDBO | 74.1175 ± 2.1002 | 12 | 0.4894 ± 0.0426 | 12 | 71.8756 ± 2.1436 | 12 | 77.6564 ± 2.3061 | 12 |
-| IDBO | 76.8365 ± 3.1664 | 2 | 0.5439 ± 0.0634 | 2 | 74.9362 ± 3.3186 | 2 | 80.0771 ± 3.1476 | 2 |
-| DBO | 75.8318 ± 2.1502 | 8 | 0.5238 ± 0.0426 | 8 | 73.8757 ± 2.3284 | 8 | 79.1307 ± 2.1205 | 8 |
-| WOA | 75.9263 ± 1.8214 | 4 | 0.5257 ± 0.0364 | 4 | 74.0012 ± 2.1454 | 5 | 79.2131 ± 1.7748 | 4 |
-| GWO | 75.9135 ± 2.0947 | 5 | 0.5255 ± 0.0418 | 5 | 74.0019 ± 2.3371 | 4 | 79.1974 ± 2.0820 | 5 |
-| HHO | 75.5681 ± 1.9716 | 9 | 0.5184 ± 0.0396 | 9 | 73.7113 ± 2.3133 | 9 | 78.7668 ± 1.9087 | 9 |
-| EVO | 75.8985 ± 2.1122 | 6 | 0.5252 ± 0.0420 | 6 | 73.9726 ± 2.3591 | 6 | 79.1896 ± 2.0614 | 7 |
-| PO | 75.8979 ± 1.9741 | 7 | 0.5251 ± 0.0396 | 7 | 73.9414 ± 2.2340 | 7 | 79.1970 ± 2.0105 | 6 |
-| NRBO | 75.9807 ± 1.7376 | 3 | 0.5267 ± 0.0349 | 3 | 74.0610 ± 2.0759 | 3 | 79.2513 ± 1.7037 | 3 |
-| CPO | 74.9821 ± 1.7819 | 10 | 0.5073 ± 0.0346 | 10 | 72.9049 ± 2.1291 | 10 | 78.4936 ± 1.6075 | 11 |
-| SWO | 74.9159 ± 1.9097 | 11 | 0.5061 ± 0.0379 | 11 | 72.7705 ± 2.2206 | 11 | 78.5124 ± 1.8716 | 10 |
-| MSDBO | 82.2468 ± 1.5252 | 1 | 0.6534 ± 0.0311 | 1 | 80.4759 ± 2.0525 | 1 | 85.5325 ± 1.8809 | 1 |
-
-Runtime summary:
-
-| Algorithm | Optimization Runtime Mean ± Std (s) | Total Runtime Mean ± Std (s) | Total Runtime Sum (s) | Runtime Rank |
-|---|---:|---:|---:|---:|
-| QHDBO | 13.9953 ± 1.0512 | 14.0122 ± 1.0544 | 420.3650 | 5 |
-| IDBO | 26.6945 ± 0.4122 | 26.7063 ± 0.4122 | 801.1889 | 10 |
-| DBO | 15.0020 ± 2.3066 | 15.0146 ± 2.3069 | 450.4366 | 8 |
-| WOA | 14.7164 ± 1.0291 | 14.7291 ± 1.0304 | 441.8740 | 7 |
-| GWO | 14.1861 ± 0.8845 | 14.1996 ± 0.8846 | 425.9874 | 6 |
-| HHO | 33.5935 ± 1.4649 | 33.6057 ± 1.4653 | 1008.1701 | 11 |
-| EVO | 20.8136 ± 6.7060 | 20.8259 ± 6.7063 | 624.7783 | 9 |
-| PO | 390.7535 ± 14.5433 | 390.7662 ± 14.5446 | 11722.9862 | 12 |
-| NRBO | 13.2236 ± 0.1401 | 13.2367 ± 0.1410 | 397.1002 | 4 |
-| CPO | 0.6846 ± 0.0425 | 0.6968 ± 0.0425 | 20.9034 | 2 |
-| SWO | 0.6689 ± 0.0338 | 0.6806 ± 0.0338 | 20.4168 | 1 |
-| MSDBO | 12.5012 ± 0.4235 | 12.5128 ± 0.4237 | 375.3854 | 3 |
-
-## 12. Result Interpretation
-
-MSDBO ranks first on all four classification metrics:
-
-- ACC Mean = 82.2468;
-- MCC Mean = 0.6534;
-- Sensitivity Mean = 80.4759;
-- Specificity Mean = 85.5325.
-
-Its mean total runtime is 12.5128 seconds, ranking third among the compared algorithms. Although SWO and CPO are faster, their classification metrics are substantially lower. Therefore, MSDBO provides the best overall classification performance while keeping runtime acceptable.
-
-Compared with IDBO, the second-ranked method by classification performance:
-
-| Metric | MSDBO | IDBO | Difference |
-|---|---:|---:|---:|
-| ACC Mean | 82.2468 | 76.8365 | +5.4102 |
-| MCC Mean | 0.6534 | 0.5439 | +0.1095 |
-| Sensitivity Mean | 80.4759 | 74.9362 | +5.5397 |
-| Specificity Mean | 85.5325 | 80.0771 | +5.4555 |
-| Total Runtime Mean(s) | 12.5128 | 26.7063 | -14.1934 |
-
-## 13. Short Reviewer-Facing Answers
+## 11. Short Reviewer-Facing Answers
 
 ### Q1. Does the shared code link include the complete implementation of MSDBO, KELM, and their integration?
 
